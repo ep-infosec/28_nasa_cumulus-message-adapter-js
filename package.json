@@ -1,0 +1,74 @@
+{
+  "name": "@cumulus/cumulus-message-adapter-js",
+  "version": "2.0.4",
+  "description": "Cumulus message adapter",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "ava",
+    "lint": "eslint test src/**/*.ts",
+    "build": "tsc"
+  },
+  "ava": {
+    "files": [
+      "test/test*.js"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12.18.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasa/cumulus-message-adapter-js.git"
+  },
+  "keywords": [
+    "Cumulus"
+  ],
+  "author": "Cumulus Team",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nasa/cumulus-message-adapter-js/issues"
+  },
+  "homepage": "https://github.com/nasa/cumulus-message-adapter-js#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.6",
+    "@types/sinon": "^9.0.4",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "ava": "^3.8.1",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "eslint-plugin-eslint-comments": "^3.0.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsdoc": "^38.1.6",
+    "eslint-plugin-lodash": "^2.7.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-unicorn": "^19.0.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "extract-zip": "^1.6.6",
+    "fs-extra": "^8.1.0",
+    "lodash.clonedeep": "^4.5.0",
+    "proxyquire": "^2.1.3",
+    "request": "^2.83.0",
+    "typescript": "^3.9.0"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.58",
+    "@cumulus/types": "^9.6.0",
+    "execa": "^4.0.0",
+    "lookpath": "1.0.3"
+  }
+}
